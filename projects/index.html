@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript bg color changer</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .button{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 1px solid black;
+            margin: 10px;
+        }
+        .button:hover{
+            cursor: pointer;
+        }
+        .button:active{
+            transform: scale(0.98);
+        }
+        .button:focus{
+            outline: none;
+        }
+        .button:active{
+            transform: scale(0.98);
+        }
+        .button:focus{
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="/" aria-current="page">Home</a>
+        <a target="_blank" href="https://www.youtube.com/watch?v=_TjtAyMkiTI">Youtube Channel</a>
+    </nav>
+    <div class="container">
+        <h1 >color changer scheme</h1>
+        <span class="button" id="grey"></span>
+        <span class="button" id="white"></span>
+        <span class="button" id="blue"></span>
+        <span class="button" id="yellow"></span>
+        <h2>Try clicking on the buttons <span>to change the background color of this page!</span></h2>
+        
+
+    </div>
+    <script src="index.js"></script>
+    
+</body>
+</html>

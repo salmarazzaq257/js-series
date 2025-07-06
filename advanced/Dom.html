@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="dom.js"></script>
+    <style>
+        .bg-black{
+            background-color: black;
+            color: white;
+        }
+
+        body{
+            background-color: black;
+            color: white;
+        }
+    </style>
+        
+    </style>
+</head>
+<body> 
+    <div class ="bg-black">
+        <!-- <h1 id="title">Hello World</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+        <button>Click me</button>
+        <input type="text" placeholder="Enter your name">
+        <input type="password" placeholder="Enter your password">
+        <input type="email" placeholder="Enter your email">
+        <input type="number" placeholder="Enter your number"> -->
+    </div>
+
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tue</div>
+        <div class="day">Wed</div>
+        <div class="day">Thu</div>
+        <div class="day">Fri</div>
+        <div class="day">Sat</div>
+        <div class="day">Sun</div>
+    </div>
+</body>
+<script>//traversing the dom
+    const parent = document.querySelector(".parent");
+    const day = document.querySelectorAll(".day");
+    console.log(day);
+    day.forEach(function(day){
+        day.style.backgroundColor = "red";
+        day.style.padding = "10px";
+        day.style.margin = "10px";
+        day.style.borderRadius = "5px";
+    });
+    for(let i = 0; i < day.length; i++){
+        day[i].style.backgroundColor = "red";
+        day[i].style.padding = "10px";
+        day[i].style.margin = "10px";
+        day[i].style.borderRadius = "5px";
+    }
+    parent.children[0].style.backgroundColor = "blue";
+    // console.log(parent.children[0]);
+    // console.log(parent.children[1]);
+    // console.log(parent.children[2]);
+    // console.log(parent.children[3]);
+    // console.log(parent.children[4]);
+    // console.log(parent.children[5]);
+    // console.log(parent.children[6]);
+    const dayOne = document.querySelector('.day')
+    console.log(dayOne.parentElement);
+    console.log("nodes" , parent.childNodes);
+</script>
+</html>
